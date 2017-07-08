@@ -1,4 +1,101 @@
 /* universal styling */
 body {
   margin: 0;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
 }
+
+h2 {
+  margin: 10px auto;
+}
+
+h4 {
+  margin: 10px auto;
+}
+
+
+/* header styling */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 69px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+}
+
+header img {
+  height: 50px;
+  padding-left: 10px;
+}
+
+header nav {
+  padding-right: 10px;
+}
+
+header span {
+  padding-left: 20px;
+  text-decoration: underline;
+}
+
+header a {
+  color: seashell;
+}
+
+
+
+/* main content */
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+  padding-top: 70px;
+}
+
+
+
+/* mission content */
+
+.mission-content {
+  background-image: url(../images/img-mission-background.jpg);
+  height: 700px;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+}
+
+.mission {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end css */
