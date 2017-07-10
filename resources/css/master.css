@@ -2,33 +2,42 @@
 body {
   margin: 0;
   font-family: Helvetica;
-  font-size: 22px;
   color: seashell;
   background-color: black;
-  opacity: 0.9;
+  font-size: 22px;
+  text-align: center;
 }
 
-h2 {
-  margin: 10px auto;
+h2, h3, h4 {
+  margin: 0;
+  padding: 10px;
 }
 
-h4 {
-  margin: 10px auto;
+a {
+  color: seashell;
 }
 
 
-/* header styling */
+
+/* .flex-container */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+/* header & nav styling */
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 69px;
   width: 100%;
+  height: 69px;
   position: fixed;
   z-index: 1;
-  background-color: black;
   border-bottom: 1px solid seashell;
+  align-items: center;
+  background-color: black;
+
 }
 
 header img {
@@ -36,17 +45,14 @@ header img {
   padding-left: 10px;
 }
 
-header nav {
-  padding-right: 10px;
+nav {
+  text-align: right;
+  flex-grow: 1;
 }
 
-header span {
-  padding-left: 20px;
-  text-decoration: underline;
-}
-
-header a {
-  color: seashell;
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
 }
 
 
@@ -60,6 +66,7 @@ header a {
   flex-flow: column wrap;
   margin: 0;
   padding-top: 70px;
+  position: relative;
 }
 
 
@@ -147,9 +154,33 @@ header a {
   margin: 0 20px;
 }
 
+.location span {
+  margin: 20px auto;
+}
 
 
 
+/* footer styling */
+
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+}
+
+.copy {
+  align-self: flex-start;
+  text-align: left;
+  padding-left: 20px;
+}
 
 
 
