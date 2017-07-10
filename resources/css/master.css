@@ -6,6 +6,7 @@ body {
   background-color: black;
   font-size: 22px;
   text-align: center;
+  opacity: 0.9;
 }
 
 h2, h3, h4 {
@@ -60,127 +61,87 @@ nav span {
 /* main content */
 
 .main-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: column wrap;
-  margin: 0;
-  padding-top: 70px;
-  position: relative;
+  padding-top: 69px;
+  width: 1200px;
+  margin: auto;
 }
 
 
 
 /* mission content */
-
-.mission-content {
+#mission {
   background-image: url(../images/img-mission-background.jpg);
   height: 700px;
-  width: 1200px;
-  display: flex;
-  align-items: center;
 }
 
-.mission {
+#mission .content {
   background-color: black;
   width: 100%;
-  display: flex;
-  flex-flow: column wrap;
-  text-align: center;
-  justify-content: space-between;
+  margin: auto;
 }
+
 
 
 
 /* featured tea */
 
-.featured-content {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
+#featured {
   width: 1000px;
-}
-
-.featured.title {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-}
-
-.featured.teas {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  margin: auto;
+  padding: 70px 0;
 }
 
 .tea {
-  text-align: center;
+  padding: 5px;
 }
 
 .tea img {
   height: 200px;
   width: 300px;
-  margin: 10px 15px;
+  margin: 10px;
+  display: block;
 }
 
+.tea span {
+  display: block;
+  padding: 0 5px 5px 5px;
+  font-weight: bold;
+  text-align: center;
+}
 
 
 /* locations section */
 
-.locations-content {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
+#locations {
   background-image: url(../images/img-locations-background.jpg);
-  width: 1200px;
   height: 500px;
-}
-
-.locations {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 5px auto;
+  padding-top: 70px;
 }
 
 .location {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  width: 300px;
+  opacity: 1.0;
+  padding: 10px 0;
+  margin: 5px 20px;
   background-color: black;
-  text-align: center;
-  opacity: 1;
-  margin: 0 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
-.location span {
-  margin: 20px auto;
-}
 
 
 
 /* footer styling */
 
 footer {
-  display: flex;
-  flex-flow: column wrap;
-  width: 100%;
-}
-
-.info {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 200px;
-}
-
-.copy {
-  align-self: flex-start;
   text-align: left;
   padding-left: 20px;
 }
+
+#contact {
+  height: 200px;
+}
+
 
 
 
